@@ -2,7 +2,6 @@ import requests as rq
 from bs4 import BeautifulSoup
 
 def feath_html(url):
-    # Fetch HTML content from URL
     resp = rq.get(url)
     return BeautifulSoup(resp.content, 'html.parser')
 
